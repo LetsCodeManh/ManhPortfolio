@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-function TextRandomizer({ text }) {
+const TextRandomizer = ({ text }) => {
   const [innerText, setInnerText] = useState(text);
   const intervalRef = useRef(null);
 
@@ -29,11 +29,7 @@ function TextRandomizer({ text }) {
       }
 
       iteration += 1 / 3;
-    }, 10);
-  };
-
-  const handleMouseOut = () => {
-    clearInterval(intervalRef.current);
+    }, 30);
   };
 
   useEffect(() => {
@@ -41,14 +37,10 @@ function TextRandomizer({ text }) {
   }, []);
 
   return (
-    <span
-      onMouseOver={handleMouseOver}
-      onMouseOut={handleMouseOut}
-      data-value={text}
-    >
+    <span onMouseOver={handleMouseOver} data-value={text}>
       {innerText}
     </span>
   );
-}
+};
 
 export default TextRandomizer;
