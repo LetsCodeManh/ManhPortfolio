@@ -97,7 +97,7 @@
 .navigation__item .navigation__link {
   color: black;
   font-family: "Quicksand", sans-serif;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 600;
   font-size: clamp(2rem, 8vmin, 7rem);
 

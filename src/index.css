@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap");
 
 *,
 *::after,
@@ -10,8 +10,27 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  min-height: 100vh;
   color: black;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+.circle {
+  border-radius: 50%;
+  z-index: -1;
+
+  background: radial-gradient(
+    circle,
+    #7fffd4cd,
+    #add8e698,
+    #e0ffffcd,
+    #b0e0e6d2,
+    transparent
+  );
+  box-shadow: 0 1rem 10rem 3rem rgba(0, 0, 0, 0.1);
 }

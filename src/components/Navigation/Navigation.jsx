@@ -5,6 +5,10 @@ import "./index.css";
 const Navigation = () => {
   const [isActive, setIsActive] = useState(false);
 
+  const handleNavigationClick = () => {
+    setIsActive(false);
+  };
+
   return (
     <header className="nagivation">
       <button
@@ -34,23 +38,39 @@ const Navigation = () => {
       <nav className={`navigation__nav ${isActive ? "is-active" : ""}`}>
         <ul className="navigation__list">
           <li className="navigation__item">
-            <a href="#home" className="navigation__link">
+            <a
+              href="#home"
+              className="navigation__link"
+              onClick={handleNavigationClick}
+            >
               <TextRandomizer text="Home" />
             </a>
           </li>
           <li className="navigation__item">
-            <a href="#about" className="navigation__link">
-            <TextRandomizer text="About Me" />
+            <a
+              href="#about"
+              className="navigation__link"
+              onClick={handleNavigationClick}
+            >
+              <TextRandomizer text="About Me" />
             </a>
           </li>
           <li className="navigation__item">
-            <a href="#projects" className="navigation__link">
-            <TextRandomizer text="Projects" />
+            <a
+              href="#projects"
+              className="navigation__link"
+              onClick={handleNavigationClick}
+            >
+              <TextRandomizer text="Projects" />
             </a>
           </li>
           <li className="navigation__item">
-            <a href="#contact" className="navigation__link">
-            <TextRandomizer text="Contact" />
+            <a
+              href="#contact"
+              className="navigation__link"
+              onClick={handleNavigationClick}
+            >
+              <TextRandomizer text="Contact" />
             </a>
           </li>
         </ul>

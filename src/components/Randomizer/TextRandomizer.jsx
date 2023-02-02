@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const origin = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const letters = origin.toLowerCase();
 
 const TextRandomizer = ({ text }) => {
   const [innerText, setInnerText] = useState(text);

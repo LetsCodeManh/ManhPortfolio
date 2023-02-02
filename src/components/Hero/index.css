@@ -1,5 +1,6 @@
 .home {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
@@ -29,12 +30,6 @@
 .home__button_group {
   display: flex;
   gap: 3rem;
-}
-
-@media (max-width: 500px) {
-  .home__button_group {
-    justify-content: center;
-  }
 }
 
 .home__button_group .home__button {
@@ -96,5 +91,39 @@
   100% {
     opacity: 1;
     transform: translateX(0px);
+  }
+}
+
+.home__circle__one {
+  position: absolute;
+  right: -20rem;
+  bottom: -20rem;
+  width: 50rem;
+  height: 50rem;
+}
+
+.home__circle__two {
+  position: absolute;
+  left: -20rem;
+  top: -10rem;
+  width: 40rem;
+  height: 40rem;
+}
+
+@media (max-width: 500px) {
+  .home__button_group {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .home__circle__one {
+    width: 35rem;
+    height: 35rem;
+  }
+
+  .home__circle__two {
+    width: 30rem;
+    height: 30rem;
   }
 }
