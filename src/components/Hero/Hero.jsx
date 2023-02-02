@@ -28,8 +28,8 @@ const Hero = () => {
           <a href="#contact">Contact Me!</a>
         </button>
       </div>
-      <div ref={circleOneRef} className="circle home__circle__one" />
-      <div ref={circleTwoRef} className="circle home__circle__two" />
+      {/* <div ref={circleOneRef} className="circle home__circle__one" />
+      <div ref={circleTwoRef} className="circle home__circle__two" /> */}
     </section>
   );
 };

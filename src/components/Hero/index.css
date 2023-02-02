@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
+  max-width: 100vw;
   padding: clamp(0.25em, 1vmin, 1em) clamp(1em, 4vmin, 4em);
   gap: 1.25rem;
   font-family: "Quicksand", sans-serif;
@@ -34,27 +35,25 @@
 
 .home__circle__one {
   position: absolute;
-  right: -20rem;
-  bottom: -20rem;
-  width: 50rem;
-  height: 50rem;
+  right: -12.5rem;
+  bottom: 0;
+  width: 25rem;
+  height: 25rem;
 }
 
 .home__circle__two {
   position: absolute;
-  left: -20rem;
-  top: -10rem;
-  width: 40rem;
-  height: 40rem;
+  left: -10rem;
+  top: -2rem;
+  width: 20rem;
+  height: 20rem;
 }
 
-@media (max-width: 500px) {
-  .home__button_group {
-    justify-content: center;
+@media (min-width: 600px) {
+  .home {
+    padding-inline: clamp(2rem, 10vmin, 7rem);
   }
-}
 
-@media (max-width: 400px) {
   .home__circle__one {
     width: 35rem;
     height: 35rem;
@@ -65,3 +64,22 @@
     height: 30rem;
   }
 }
+
+@media (max-width: 500px) {
+  .home__button__group {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 800px) {
+  .home {
+    padding-inline: clamp(7rem, 15vmin, 10rem);
+  }
+
+  .home__circle__one {
+    width: 40rem;
+    height: 40rem;
+    bottom: -5rem;
+  }
+}
+

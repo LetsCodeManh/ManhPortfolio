@@ -1,0 +1,9 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: aquamarine;
+  padding: 1.5rem;
+  overflow: hidden;
+}
