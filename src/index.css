@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
 
 *,
 *::after,
@@ -16,7 +16,7 @@ html {
 
 body {
   color: black;
-  font-family: "Roboto", sans-serif;
+  font-family: "Quicksand", sans-serif;
   overflow-x: hidden;
 }
 
@@ -33,4 +33,66 @@ body {
     transparent
   );
   box-shadow: 0 1rem 10rem 3rem rgba(0, 0, 0, 0.1);
+}
+
+.button__normal {
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  position: relative;
+  padding: 1rem 1.5rem;
+  border-radius: 99rem;
+
+  background-color: aquamarine;
+
+  transition: all 200ms;
+  animation: moveInBottom 500ms ease-out;
+  animation-fill-mode: backwards;
+}
+
+.button__normal::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  display: inline-block;
+  border-radius: 99rem;
+  background-color: aquamarine;
+
+  transition: all 400ms;
+}
+
+.button__normal:hover::after {
+  transform: scaleX(1.2) scaleY(1.4);
+  opacity: 0;
+}
+
+.button__normal:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.button__normal a {
+  text-decoration: none;
+  color: black;
+  font-size: clamp(1rem, 3vmin, 1.15rem);
+  font-family: "Quicksand", sans-serif;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }

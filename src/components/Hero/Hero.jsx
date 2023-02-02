@@ -20,12 +20,12 @@ const Hero = () => {
         Take a look around to see what I can offer, and let's bring your vision
         to life.
       </p>
-      <div className="home__button_group">
-        <button className="home__button">
+      <div className="home__button__group">
+        <button className="button__normal">
           <a href="#about">More About Me!</a>
         </button>
-        <button className="home__button">
-          <a href="#d">Download CV</a>
+        <button className="button__normal">
+          <a href="#contact">Contact Me!</a>
         </button>
       </div>
       <div ref={circleOneRef} className="circle home__circle__one" />
