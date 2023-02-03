@@ -1,4 +1,5 @@
 import { useState } from "react";
+import FadeInOnIntersect from "../Effects/AnimationOnScroll";
 import "./index.css";
 
 const Contact = () => {
@@ -36,7 +37,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact">
-      <form onSubmit={handleSubmit} className="contact__form">
+      <FadeInOnIntersect onSubmit={handleSubmit} className="contact__form">
         <h1 className="contact__header">Contact Me!</h1>
         <input
           type="text"
@@ -65,8 +66,8 @@ const Contact = () => {
         <button type="submit" className="button__normal">
           <a href="#">Let's get in touch!</a>
         </button>
-      </form>
-      <div className="about__info__container">
+      </FadeInOnIntersect>
+      <FadeInOnIntersect className="about__info__container">
         <p>
           Thank you for visting my portfolio. I hope you like it so far. The
           last thing I give is my resume, if you want of course.
@@ -74,7 +75,7 @@ const Contact = () => {
         <button className="button__normal">
           <a href="#">Download CV!</a>{" "}
         </button>
-      </div>
+      </FadeInOnIntersect>
     </section>
   );
 };

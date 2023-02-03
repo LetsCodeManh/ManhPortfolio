@@ -4,7 +4,6 @@
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  max-width: 100vw;
   padding: clamp(0.25em, 1vmin, 1em) clamp(1em, 4vmin, 4em);
   gap: 1.25rem;
   font-family: "Quicksand", sans-serif;

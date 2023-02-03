@@ -3,7 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { useRef } from "react";
 import fillerPicture from "../../assets/Profilbild.jpg";
-import useParallax from "../../Effects/useParallax";
+import FadeInOnIntersect from "../Effects/AnimationOnScroll";
+
+import useParallax from "../Effects/useParallax";
 import "./index.css";
 
 const About = () => {
@@ -22,7 +24,8 @@ const About = () => {
           src={fillerPicture}
           alt="My face should be here."
         />
-        <div className="about__content">
+
+        <FadeInOnIntersect className="about__content">
           <h1 className="about__header">About Me...</h1>
           <p className="about__text">
             Hi, I'm Manh, a motivated and dedicated individual with a passion
@@ -55,7 +58,7 @@ const About = () => {
               />
             </a>
           </div>
-        </div>
+        </FadeInOnIntersect>
         <div ref={circleOneRef} className="circle about__circle__one" />
         <div ref={circleTwoRef} className="circle about__circle__two" />
       </div>

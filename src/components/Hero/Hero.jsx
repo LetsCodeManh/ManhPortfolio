@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import useParallax from "../../Effects/useParallax";
+import useParallax from "../Effects/useParallax";
 import TextRandomizer from "../Randomizer/TextRandomizer";
 import "./index.css";
 

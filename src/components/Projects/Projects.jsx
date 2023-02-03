@@ -1,67 +1,10 @@
 import { useRef } from "react";
-import useParallax from "../../Effects/useParallax";
+import useParallax from "../Effects/useParallax";
 import "./index.css";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-const projects = [
-  {
-    title: "Hyrule Compendium App",
-    technologies: "HTML | CSS | JS",
-    github: "https://github.com/LetsCodeManh/Hyrule-Compendium-js-app",
-    liveLink: "https://letscodemanh.github.io/Hyrule-Compendium-js-app/",
-    live: "LIVE",
-  },
-  {
-    title: "Manh's Portfolio",
-    technologies: "React | Vite | CSS",
-    github: "https://github.com/LetsCodeManh/ManhPortfolio",
-    liveLink: "https://letscodemanh.github.io/ManhPortfolio/",
-    live: "LIVE",
-  },
-  {
-    title: "Olga Website",
-    technologies: "React | Vite | TailwindCSS",
-    github: "https://github.com/LetsCodeManh/OlgaWebsite",
-    liveLink: "https://LetsCodeManh.github.io/OlgaWebsite/",
-    live: "LIVE",
-  },
-  {
-    title: "myFlix Server",
-    technologies: "Node | Express | MongoDB",
-    github: "https://github.com/LetsCodeManh/myFlix-server",
-    liveLink: "#",
-    live: "",
-  },
-  {
-    title: "myFlix Client",
-    technologies: "React | Redux | Bootstrap",
-    github: "https://github.com/LetsCodeManh/myFlix-client",
-    liveLink: "https://myflix-test-website.netlify.app/",
-    live: "LIVE",
-  },
-  {
-    title: "MeetApp",
-    technologies: "React | Google API | Jest",
-    github: "https://github.com/LetsCodeManh/MeetApp",
-    liveLink: "https://letscodemanh.github.io/MeetApp/",
-    live: "LIVE",
-  },
-  {
-    title: "ChatApp",
-    technologies: "React Native | Expo | Firebase",
-    github: "https://github.com/LetsCodeManh/ChatApp",
-    liveLink: "#",
-    live: "",
-  },
-  {
-    title: "myFlixAngular",
-    technologies: "Angular | TypeScript | SCSS",
-    github: "https://github.com/LetsCodeManh/myFlix-Angular-Client",
-    liveLink: "https://letscodemanh.github.io/myFlix-Angular-Client/",
-    live: "LIVE",
-  },
-];
+import { projects } from "./projectsData";
+import FadeInOnIntersect from "../Effects/AnimationOnScroll";
 
 const Projects = () => {
   const circleOneRef = useRef(null);
@@ -74,7 +17,11 @@ const Projects = () => {
       <h1 className="projects__header">My Projects</h1>
       <div className="projects__container">
         {projects.map((project, index) => (
-          <div key={index} className="projects__card">
+          <FadeInOnIntersect
+            key={index}
+            className="projects__card"
+            onClick={() => handleOpenModal(project)}
+          >
             <div className="projects__card__content">
               <h3>{project.title}</h3>
               <p>{project.technologies}</p>
@@ -97,7 +44,7 @@ const Projects = () => {
                 )}
               </div>
             </div>
-          </div>
+          </FadeInOnIntersect>
         ))}
       </div>
       <div ref={circleOneRef} className="circle projects__circle__one" />
