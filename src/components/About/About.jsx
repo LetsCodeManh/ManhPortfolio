@@ -14,11 +14,11 @@ const About = () => {
   return (
     <section id="about" className="about">
       <div className="about__me">
-        {/* <img
+        <img
           className="about__image"
           src={fillerPicture}
           alt="My face should be here."
-        /> */}
+        />
         <div className="about__content">
           <h1 className="about__header">About Me...</h1>
           <p className="about__text">
@@ -30,30 +30,14 @@ const About = () => {
             skills to a new challenge as a web developer and I am confident that
             I will be a valuable addition to any organization.
           </p>
-          <div className="about__button__group">
-            <button className="button__normal">
-              <a href="#contact">Contact Me!</a>
-            </button>
-            <button className="button__normal">
-              <a href="#">Download CV!</a>
-            </button>
-          </div>
+
+          <button className="button__normal about__button">
+            <a href="#contact">Contact Me!</a>
+          </button>
         </div>
         {/* <div ref={circleOneRef} className="circle about__circle__one" />
         <div ref={circleTwoRef} className="circle about__circle__two" /> */}
       </div>
-      {/* <div className="about__skills">
-        <div className="about__skills__card">
-
-          <div className="about__skills__box">
-            <h3></h3>
-          </div>
-        </div>
-
-
-
-        <div ref={circleThreeRef} className="circle about__circle__three" />
-      </div> */}
     </section>
   );
 };
