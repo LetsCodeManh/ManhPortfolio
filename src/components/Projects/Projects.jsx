@@ -20,9 +20,9 @@ const projects = [
   {
     title: "Olga Website",
     technologies: "React | Vite | TailwindCSS",
-    github: "#",
-    liveLink: "#",
-    live: "",
+    github: "https://github.com/LetsCodeManh/OlgaWebsite",
+    liveLink: "https://LetsCodeManh.github.io/OlgaWebsite/",
+    live: "LIVE",
   },
   {
     title: "myFlix Server",
@@ -35,15 +35,15 @@ const projects = [
     title: "myFlix Client",
     technologies: "React | Redux | Bootstrap",
     github: "https://github.com/LetsCodeManh/myFlix-client",
-    liveLink: "#",
-    live: "",
+    liveLink: "https://myflix-test-website.netlify.app/",
+    live: "LIVE",
   },
   {
     title: "MeetApp",
     technologies: "React | Google API | Jest",
     github: "https://github.com/LetsCodeManh/MeetApp",
-    liveLink: "#",
-    live: "",
+    liveLink: "https://letscodemanh.github.io/MeetApp/",
+    live: "LIVE",
   },
   {
     title: "ChatApp",

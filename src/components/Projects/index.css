@@ -87,39 +87,39 @@
 }
 
 .projects__card:nth-child(3) {
-  background: url(../../assets/Zelda.png);
+  background: url(../../assets/Olga.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .projects__card:nth-child(4) {
-  background: url(../../assets/Zelda.png);
+  background: url(../../assets/myFlix-Server.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .projects__card:nth-child(5) {
-  background: url(../../assets/Zelda.png);
+  background: url(../../assets/myFlix-React.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .projects__card:nth-child(6) {
-  background: url(../../assets/Zelda.png);
+  background: url(../../assets/MeetApp.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .projects__card:nth-child(7) {
-  background: url(../../assets/Zelda.png);
+  background: url(../../assets/ChatApp.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .projects__card:nth-child(8) {
-  background: url(../../assets/Zelda.png);
+  background: url(../../assets/myFlix-Angular.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
