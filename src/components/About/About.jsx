@@ -25,9 +25,8 @@ const About = () => {
         <div className="about__content">
           <h1 className="about__header">About Me...</h1>
           <p className="about__text">
-            I just wrote the my about me like this. Can you check? Hi, I'm Manh,
-            a motivated and dedicated individual with a passion for web
-            development and business. I have completed a full-stack web
+            Hi, I'm Manh, a motivated and dedicated individual with a passion
+            for web development and business. I have completed a full-stack web
             developer bootcamp, which give me a comprehensive understanding of
             the latest web development technologies. And I am eager to apply my
             skills to a new challenge as a web developer and I am confident that
