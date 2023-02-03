@@ -81,7 +81,7 @@
 }
 
 .projects__card:nth-child(2) {
-  background: url(../../assets/Zelda.png);
+  background: url(../../assets/Portfolio.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

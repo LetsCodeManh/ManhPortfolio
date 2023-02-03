@@ -18,8 +18,10 @@
   padding: 2rem;
   border-radius: 1rem;
 
-  display: grid;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
   box-shadow: 0 1rem 10rem 3rem rgba(0, 0, 0, 0.1);
   z-index: 10;
 }
@@ -33,9 +35,9 @@
   padding: 2.5rem 2rem;
   border-radius: 1rem;
 
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 1.5rem;
   box-shadow: 0 1rem 10rem 3rem rgba(127, 255, 212, 0.3);
 }
@@ -62,36 +64,36 @@
 
 @media (min-width: 700px) {
   .contact__form {
-    grid-row: 3 / 14;
-    grid-column: 4 / 19;
+    grid-row: 5 / 14;
+    grid-column: 6 / 19;
   }
 
   .about__info__container {
-    grid-row: 13 / 19;
+    grid-row: 13 / 18;
     grid-column: 2 / 13;
   }
 }
 
 @media (min-width: 1000px) {
   .contact__form {
-    grid-row: 4 / 14;
+    grid-row: 6 / 14;
     grid-column: 6 / 18;
   }
 
   .about__info__container {
-    grid-row: 13 / 19;
-    grid-column: 4 / 12;
+    grid-row: 13 / 18;
+    grid-column: 5 / 12;
   }
 }
 
 @media (min-width: 1400px) {
   .contact__form {
-    grid-row: 4 / 14;
+    grid-row: 6 / 14;
     grid-column: 7 / 16;
   }
 
   .about__info__container {
-    grid-row: 13 / 19;
+    grid-row: 13 / 18;
     grid-column: 6 / 13;
   }
 }

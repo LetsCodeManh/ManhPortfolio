@@ -16,10 +16,11 @@
 .about__content {
   grid-row: 8 / 21;
   grid-column: 4 / 21;
-  display: grid;
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
+  gap: 1rem;
   z-index: 10;
 
   padding: 2rem;
@@ -72,8 +73,8 @@
   }
 
   .about__image {
-    grid-row: 2 / 21;
-    grid-column: 2 / 21;
+    grid-row-start: 2;
+    grid-column-start: 2;
 
     height: 450px;
   }
@@ -98,8 +99,6 @@
     width: 35rem;
     height: 35rem;
   }
-
-  
 }
 
 @media (min-width: 1000px) {
