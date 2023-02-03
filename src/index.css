@@ -10,12 +10,20 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-primary: aquamarine;
+  --color-secondary: #DDFFF7;
+  --color-dark: black;
+  --color-light: white;
+}
+
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  color: black;
+  color: var(--color-dark);
   font-family: "Quicksand", sans-serif;
 }
 
@@ -25,7 +33,7 @@ body {
 
   background: radial-gradient(
     circle,
-    #7fffd4cd,
+    var(--color-primary),
     #add8e698,
     #e0ffffcd,
     #b0e0e6d2
@@ -43,14 +51,14 @@ body {
   position: relative;
   border-radius: 99rem;
 
-  background-color: aquamarine;
+  background-color: var(--color-secondary);
 
   transition: all 200ms;
   animation: moveInBottom 500ms ease-out;
   animation-fill-mode: backwards;
   font-size: clamp(1rem, 3vmin, 1.15rem);
   font-family: "Quicksand", sans-serif;
-
+  font-weight: 500;
 }
 
 .button__normal::after {
@@ -65,7 +73,7 @@ body {
 
   display: inline-block;
   border-radius: 99rem;
-  background-color: aquamarine;
+  background-color: var(--color-primary);
 
   transition: all 400ms;
 }
@@ -78,11 +86,12 @@ body {
 .button__normal:hover {
   transform: translateY(-3px);
   box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
+  background-color: var(--color-primary);
 }
 
 .button__normal a {
   text-decoration: none;
-  color: black;
+  color: var(--color-dark);
 }
 
 @keyframes moveInBottom {
