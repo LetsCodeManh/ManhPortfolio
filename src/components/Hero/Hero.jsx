@@ -22,14 +22,14 @@ const Hero = () => {
       </p>
       <div className="home__button__group">
         <button className="button__normal">
-          <a href="#about">More About Me!</a>
+          <a href="#about">About Me!</a>
         </button>
         <button className="button__normal">
           <a href="#contact">Contact Me!</a>
         </button>
       </div>
-      {/* <div ref={circleOneRef} className="circle home__circle__one" />
-      <div ref={circleTwoRef} className="circle home__circle__two" /> */}
+      <div ref={circleOneRef} className="circle home__circle__one" />
+      <div ref={circleTwoRef} className="circle home__circle__two" />
     </section>
   );
 };

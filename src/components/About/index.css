@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   padding-inline: 1rem;
+  position: relative;
+  margin-bottom: 4rem;
 }
 
 .about__me {
@@ -48,6 +50,22 @@
   font-weight: 400;
 }
 
+.about__circle__one {
+  position: absolute;
+  right: 0rem;
+  bottom: 0rem;
+  width: 25rem;
+  height: 25rem;
+}
+
+.about__circle__two {
+  position: absolute;
+  left: -15rem;
+  top: 0rem;
+  width: 30rem;
+  height: 30rem;
+}
+
 @media (min-width: 480px) {
   .about__me {
     min-height: 100vh;
@@ -75,6 +93,13 @@
     grid-row: 10 / 19;
     grid-column: 7 / 19;
   }
+
+  .about__circle__one {
+    width: 35rem;
+    height: 35rem;
+  }
+
+  
 }
 
 @media (min-width: 1000px) {
@@ -89,6 +114,11 @@
     grid-row: 10 / 18;
     grid-column: 7 / 18;
   }
+
+  .about__circle__two {
+    width: 40rem;
+    height: 40rem;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -102,22 +132,3 @@
     grid-column: 9 / 18;
   }
 }
-
-/* 
-
-
-.about__circle__one {
-  position: absolute;
-  right: -30rem;
-  bottom: -30rem;
-  width: 45rem;
-  height: 45rem;
-}
-
-.about__circle__two {
-  position: absolute;
-  left: -20rem;
-  top: -10rem;
-  width: 40rem;
-  height: 40rem;
-} */

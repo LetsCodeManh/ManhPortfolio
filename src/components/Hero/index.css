@@ -35,7 +35,7 @@
 
 .home__circle__one {
   position: absolute;
-  right: -12.5rem;
+  right: 0;
   bottom: 0;
   width: 25rem;
   height: 25rem;
@@ -51,7 +51,7 @@
 
 @media (min-width: 600px) {
   .home {
-    padding-inline: clamp(2rem, 10vmin, 7rem);
+    padding-inline: clamp(2rem, 10vmin, 6rem);
   }
 
   .home__circle__one {
@@ -65,15 +65,9 @@
   }
 }
 
-@media (max-width: 500px) {
-  .home__button__group {
-    justify-content: center;
-  }
-}
-
 @media (min-width: 800px) {
   .home {
-    padding-inline: clamp(7rem, 15vmin, 10rem);
+    padding-inline: clamp(4.5rem, 10vmin, 8rem);
   }
 
   .home__circle__one {
@@ -83,3 +77,9 @@
   }
 }
 
+
+@media (max-width: 500px) {
+  .home__button__group {
+    justify-content: center;
+  }
+}

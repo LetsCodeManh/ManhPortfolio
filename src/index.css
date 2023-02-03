@@ -17,8 +17,6 @@ html {
 body {
   color: black;
   font-family: "Quicksand", sans-serif;
-  overflow-x: hidden;
-
 }
 
 .circle {
@@ -30,10 +28,9 @@ body {
     #7fffd4cd,
     #add8e698,
     #e0ffffcd,
-    #b0e0e6d2,
-    transparent
+    #b0e0e6d2
   );
-  box-shadow: 0 1rem 10rem 3rem rgba(0, 0, 0, 0.1);
+  filter: blur(1rem);
 }
 
 .button__normal {

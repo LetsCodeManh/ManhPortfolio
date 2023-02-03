@@ -35,8 +35,8 @@ const About = () => {
             <a href="#contact">Contact Me!</a>
           </button>
         </div>
-        {/* <div ref={circleOneRef} className="circle about__circle__one" />
-        <div ref={circleTwoRef} className="circle about__circle__two" /> */}
+        <div ref={circleOneRef} className="circle about__circle__one" />
+        <div ref={circleTwoRef} className="circle about__circle__two" />
       </div>
     </section>
   );
