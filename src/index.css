@@ -48,6 +48,9 @@ body {
   transition: all 200ms;
   animation: moveInBottom 500ms ease-out;
   animation-fill-mode: backwards;
+  font-size: clamp(1rem, 3vmin, 1.15rem);
+  font-family: "Quicksand", sans-serif;
+
 }
 
 .button__normal::after {
@@ -80,8 +83,6 @@ body {
 .button__normal a {
   text-decoration: none;
   color: black;
-  font-size: clamp(1rem, 3vmin, 1.15rem);
-  font-family: "Quicksand", sans-serif;
 }
 
 @keyframes moveInBottom {

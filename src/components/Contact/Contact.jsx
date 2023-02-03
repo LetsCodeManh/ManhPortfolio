@@ -63,7 +63,7 @@ const Contact = () => {
           className="contact__form__input"
         />
         <button type="submit" className="button__normal">
-          Let's get in touch!
+          <a href="#">Let's get in touch!</a>
         </button>
       </form>
       <div className="about__info__container">
@@ -71,7 +71,9 @@ const Contact = () => {
           Thank you for visting my portfolio. I hope you like it so far. The
           last thing I give is my resume, if you want of course.
         </p>
-        <button className="button__normal">Download CV!</button>
+        <button className="button__normal">
+          <a href="#">Download CV!</a>{" "}
+        </button>
       </div>
     </section>
   );

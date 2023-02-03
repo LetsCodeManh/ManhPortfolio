@@ -31,7 +31,7 @@ const About = () => {
             I will be a valuable addition to any organization.
           </p>
 
-          <button className="button__normal about__button">
+          <button className="button__normal">
             <a href="#contact">Contact Me!</a>
           </button>
         </div>
