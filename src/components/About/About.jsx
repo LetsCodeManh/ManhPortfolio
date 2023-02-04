@@ -40,7 +40,11 @@ const About = () => {
             <button className="button__normal">
               <a href="#contact">Contact Me!</a>
             </button>
-            <a href="https://github.com/LetsCodeManh" target="_blank">
+            <a
+              href="https://github.com/LetsCodeManh"
+              target="_blank"
+              className="icon__hover"
+            >
               <FontAwesomeIcon
                 icon={faGithub}
                 size="2xl"
@@ -50,6 +54,7 @@ const About = () => {
             <a
               href="https://www.linkedin.com/in/manh-nguyen-0a094524b/"
               target="_blank"
+              className="icon__hover"
             >
               <FontAwesomeIcon
                 icon={faLinkedin}

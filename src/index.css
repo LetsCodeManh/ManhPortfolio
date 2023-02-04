@@ -11,19 +11,22 @@
 }
 
 :root {
-  --color-primary: aquamarine;
-  --color-secondary: #DDFFF7;
-  --color-dark: black;
-  --color-light: white;
+  --color-primary: #491B40;
+  --color-primary-2: #B0617F;
+  --color-primary-3: #EF9EBA;
+  --color-primary-4: #F6CDDE;
+  --color-secondary: #ddfff7;
+  --color-dark: #121212;
+  --color-light: #FEF9FC;
 }
-
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  color: var(--color-dark);
+  background-color: var(--color-dark);
+  color: var(--color-light);
   font-family: "Quicksand", sans-serif;
 }
 
@@ -34,9 +37,9 @@ body {
   background: radial-gradient(
     circle,
     var(--color-primary),
-    #add8e698,
-    #e0ffffcd,
-    #b0e0e6d2
+    var(--color-primary-2),
+    var(--color-primary-3),
+    var(--color-primary-4)
   );
   filter: blur(1rem);
 }
@@ -51,7 +54,7 @@ body {
   position: relative;
   border-radius: 99rem;
 
-  background-color: var(--color-secondary);
+  background-color: var(--color-light);
 
   transition: all 200ms;
   animation: moveInBottom 500ms ease-out;
@@ -94,6 +97,10 @@ body {
   color: var(--color-dark);
 }
 
+.button__normal a:hover {
+  color: var(--color-light);
+}
+
 @keyframes moveInBottom {
   0% {
     opacity: 0;
@@ -118,4 +125,12 @@ body {
   filter: blur(0);
   transform: translateY(0);
   transition: all 600ms ease;
+}
+
+.icon__hover {
+  transition: all 300ms ease;
+}
+
+.icon__hover:hover {
+  scale: 1.1;
 }

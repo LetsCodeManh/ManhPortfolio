@@ -26,7 +26,7 @@ const Projects = () => {
               <h3>{project.title}</h3>
               <p>{project.technologies}</p>
               <div className="projects__card__links">
-                <a href={project.github} target="_blank">
+                <a href={project.github} target="_blank" className="icon__hover">
                   <FontAwesomeIcon
                     icon={faGithub}
                     size="2xl"
@@ -37,7 +37,7 @@ const Projects = () => {
                   <a
                     href={project.liveLink}
                     target="_blank"
-                    className="projects__card__liveLink"
+                    className="projects__card__liveLink icon__hover"
                   >
                     {project.live}
                   </a>
