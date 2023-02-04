@@ -23,10 +23,10 @@ const Projects = () => {
             onClick={() => handleOpenModal(project)}
           >
             <div className="projects__card__content">
-              <h3>{project.title}</h3>
+              <h2>{project.title}</h2>
               <p>{project.technologies}</p>
               <div className="projects__card__links">
-                <a href={project.github} target="_blank" className="icon__hover">
+                <a href={project.github} target="_blank" className="icon__hover" aria-label={`${project.title} GitHub Repository`}>
                   <FontAwesomeIcon
                     icon={faGithub}
                     size="2xl"
@@ -37,7 +37,7 @@ const Projects = () => {
                   <a
                     href={project.liveLink}
                     target="_blank"
-                    className="projects__card__liveLink icon__hover"
+                    className="projects__card__liveLink icon__hover" aria-label={`${project.title} Live Link`}
                   >
                     {project.live}
                   </a>

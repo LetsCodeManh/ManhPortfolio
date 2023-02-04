@@ -44,6 +44,7 @@ const About = () => {
               href="https://github.com/LetsCodeManh"
               target="_blank"
               className="icon__hover"
+              aria-label="GitHub Account"
             >
               <FontAwesomeIcon
                 icon={faGithub}
@@ -55,6 +56,7 @@ const About = () => {
               href="https://www.linkedin.com/in/manh-nguyen-0a094524b/"
               target="_blank"
               className="icon__hover"
+              aria-label="LinkenIn Account"
             >
               <FontAwesomeIcon
                 icon={faLinkedin}

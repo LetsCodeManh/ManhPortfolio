@@ -14,6 +14,7 @@ const Navigation = () => {
       <button
         className={`navigation__hamburger ${isActive ? "is-active" : ""}`}
         onClick={() => setIsActive(!isActive)}
+        aria-label="Hamburger Menu"
       >
         <svg
           fill="none"
