@@ -55,7 +55,7 @@
   width: 3rem;
   border-radius: 50%;
 
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-2);
   transition: transform 800ms cubic-bezier(0.86, 0, 0.07, 1);
 }
 
@@ -120,7 +120,7 @@
 }
 
 .navigation__item .navigation__link::before {
-  background: linear-gradient(to right, transparent, var(--color-light));
+  background: linear-gradient(to right, transparent, var(--color-primary-4));
   z-index: -1;
 
   content: "";

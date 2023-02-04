@@ -31,8 +31,8 @@
   grid-row: 13 / 20;
   grid-column: 2 / 19;
 
-  background-color: black;
-  color: white;
+  background-color: var(--color-primary-3);
+  color: var(--color-dark);
   padding: 2.5rem 2rem;
   border-radius: 1rem;
 
