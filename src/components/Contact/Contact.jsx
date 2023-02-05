@@ -1,3 +1,5 @@
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import FadeInOnIntersect from "../Effects/AnimationOnScroll";
 import "./index.css";
@@ -65,17 +67,45 @@ const Contact = () => {
             className="contact__form__input"
           />
           <button type="submit" className="button__normal">
-            <a>Let's get in touch!</a>
+            <a aria-label="Send messages to Manh">Let's get in touch!</a>
           </button>
+          <div className="contact__social__links">
+            <a
+              href="https://github.com/LetsCodeManh"
+              target="_blank"
+              className="icon__hover"
+              aria-label="GitHub Account"
+            >
+              <FontAwesomeIcon
+                icon={faGithub}
+                size="2xl"
+                style={{ color: "#171515" }}
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/manh-nguyen-0a094524b/"
+              target="_blank"
+              className="icon__hover"
+              aria-label="LinkenIn Account"
+            >
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                size="2xl"
+                style={{ color: "#0077B5" }}
+              />
+            </a>
+          </div>
         </form>
       </FadeInOnIntersect>
       <FadeInOnIntersect className="about__info__container">
         <p>
-          Thank you for visting my portfolio. I hope you like it so far. The
-          last thing I give is my resume, if you want of course.
+          Thank you for visiting my portfolio. I hope you like it. My resume is
+          available if desired.
         </p>
         <button className="button__normal">
-          <a href="#">Download CV!</a>{" "}
+          <a href="#" target="_blank" aria-label="Download Resume">
+            Download CV!
+          </a>
         </button>
       </FadeInOnIntersect>
     </section>
