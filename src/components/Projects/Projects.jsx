@@ -24,7 +24,7 @@ const Projects = () => {
           >
             <div className="projects__card__content">
               <h2>{project.title}</h2>
-              <p>{project.technologies}</p>
+              <div>{project.technologies}</div>
               <div className="projects__card__links">
                 <a href={project.github} target="_blank" className="icon__hover" aria-label={`${project.title} GitHub Repository`}>
                   <FontAwesomeIcon

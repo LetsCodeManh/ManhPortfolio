@@ -20,7 +20,7 @@ const Contact = () => {
       const response = await fetch("https://formspree.io/f/mnqyjweb", {
         method: "POST",
         headers: {
-          "Content-Type": "aplication/json",
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
@@ -37,35 +37,37 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact">
-      <FadeInOnIntersect onSubmit={handleSubmit} className="contact__form">
+      <FadeInOnIntersect className="contact__form">
         <h1 className="contact__header">Contact Me!</h1>
-        <input
-          type="text"
-          placeholder="Your name"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          className="contact__form__input"
-        />
-        <input
-          type="email"
-          placeholder="Your email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          className="contact__form__input"
-        />
-        <textarea
-          placeholder="Your message"
-          name="message"
-          rows={2}
-          value={formData.message}
-          onChange={handleChange}
-          className="contact__form__input"
-        />
-        <button type="submit" className="button__normal">
-          <a href="#">Let's get in touch!</a>
-        </button>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Your name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            className="contact__form__input"
+          />
+          <input
+            type="email"
+            placeholder="Your email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            className="contact__form__input"
+          />
+          <textarea
+            placeholder="Your message"
+            name="message"
+            rows={2}
+            value={formData.message}
+            onChange={handleChange}
+            className="contact__form__input"
+          />
+          <button type="submit" className="button__normal">
+            <a>Let's get in touch!</a>
+          </button>
+        </form>
       </FadeInOnIntersect>
       <FadeInOnIntersect className="about__info__container">
         <p>

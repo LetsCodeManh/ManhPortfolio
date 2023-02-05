@@ -1,9 +1,42 @@
 .footer {
   display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  background-color: var(--color-primary-2);
-  padding: 1.5rem;
-  overflow: hidden;
+  background-color: var(--color-primary-3);
+  color: var(--color-dark);
+  padding: 1.25rem;
+}
+
+.heart-icon {
+  display: inline-block;
+  position: relative;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.heart-icon::before,
+.heart-icon::after {
+  content: "";
+  position: absolute;
+  width: 1.5em;
+  height: 1.75em;
+  background-color: transparent;
+
+  border-radius: 0.5em 0.5em 0 0;
+  background-color: black;
+  transform: rotate(45deg);
+  top: 0;
+  left: 0.25em;
+}
+
+.heart-icon::after {
+  width: 1em;
+  height: 1.75em;
+  border-radius: 0.5em 0.5em 0 0;
+  background-color: black;
+  transform: rotate(-45deg);
+  top: 0;
+  right: 0.25em;
 }

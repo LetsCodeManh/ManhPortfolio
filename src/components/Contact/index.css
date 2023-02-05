@@ -23,8 +23,16 @@
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
+
   box-shadow: 0 1rem 10rem 3rem rgba(0, 0, 0, 0.1);
   z-index: 10;
+}
+
+.contact__form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .about__info__container {
@@ -40,7 +48,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 1.5rem;
-  box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.2);
 }
 
 .contact__form__input {
@@ -98,4 +106,14 @@
     grid-row: 13 / 18;
     grid-column: 6 / 13;
   }
+}
+
+.contact__form .button__normal {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+.contact__form .button__normal:hover {
+  background-color: var(--color-primary-3);
+  color: var(--color-dark);
 }

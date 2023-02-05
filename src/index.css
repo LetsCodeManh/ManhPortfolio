@@ -8,16 +8,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: inherit;
 }
 
 :root {
-  --color-primary: #491B40;
-  --color-primary-2: #B0617F;
-  --color-primary-3: #EF9EBA;
-  --color-primary-4: #F6CDDE;
+  --color-primary: #491b40;
+  --color-primary-2: #b0617f;
+  --color-primary-3: #ef9eba;
+  --color-primary-4: #f6cdde;
   --color-secondary: #ddfff7;
   --color-dark: #121212;
-  --color-light: #FEF9FC;
+  --color-light: #fef9fc;
 }
 
 html {
@@ -55,12 +56,12 @@ body {
   border-radius: 99rem;
 
   background-color: var(--color-light);
+  color: var(--color-dark);
 
   transition: all 300ms ease;
   animation: moveInBottom 500ms ease;
   animation-fill-mode: backwards;
   font-size: clamp(1rem, 3vmin, 1.15rem);
-  font-family: "Quicksand", sans-serif;
   font-weight: 500;
 }
 
@@ -93,9 +94,14 @@ body {
   color: var(--color-light);
 }
 
+.button__normal:active {
+  transform: translateY(3px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
 .button__normal a {
   text-decoration: none;
-  color: inherit;
+  color: inherit, var(--color-dark);
 }
 
 @keyframes moveInBottom {

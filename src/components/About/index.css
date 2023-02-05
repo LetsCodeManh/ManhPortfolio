@@ -138,3 +138,13 @@
   align-items: center;
   gap: 1rem;
 }
+
+.about .button__normal {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+.about .button__normal:hover {
+  background-color: var(--color-primary-3);
+  color: var(--color-dark);
+}
