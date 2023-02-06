@@ -1,19 +1,12 @@
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { useRef } from "react";
 import fillerPicture from "../../assets/Profilbild.jpg";
 import FadeInOnIntersect from "../Effects/AnimationOnScroll";
 
-import useParallax from "../Effects/useParallax";
 import "./index.css";
 
 const About = () => {
-  const circleOneRef = useRef(null);
-  const circleTwoRef = useRef(null);
-  useParallax(circleOneRef, 0.5);
-  useParallax(circleTwoRef, 0.3);
-
   return (
     <section id="about" className="about">
       <div className="about__me">
@@ -64,8 +57,8 @@ const About = () => {
             </a>
           </div>
         </FadeInOnIntersect>
-        <div ref={circleOneRef} className="circle about__circle__one" />
-        <div ref={circleTwoRef} className="circle about__circle__two" />
+        <div className="circle about__circle__one" />
+        <div className="circle about__circle__two" />
       </div>
     </section>
   );

@@ -1,6 +1,7 @@
 .contact {
   min-height: 100vh;
   display: grid;
+  position: relative;
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(20, 1fr);
 }
@@ -122,4 +123,12 @@
   display: flex;
   gap: 1rem;
   justify-content: center;
+}
+.contact__circle__one {
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  width: 40rem;
+  height: 40rem;
+  transform: translate(50%, 50%);
 }

@@ -49,6 +49,7 @@ const Contact = () => {
             value={formData.name}
             onChange={handleChange}
             className="contact__form__input"
+            required
           />
           <input
             type="email"
@@ -57,6 +58,7 @@ const Contact = () => {
             value={formData.email}
             onChange={handleChange}
             className="contact__form__input"
+            required
           />
           <textarea
             placeholder="Your message"
@@ -65,9 +67,10 @@ const Contact = () => {
             value={formData.message}
             onChange={handleChange}
             className="contact__form__input"
+            required
           />
           <button type="submit" className="button__normal">
-            <a aria-label="Send messages to Manh">Let's get in touch!</a>
+            <a href="#contact" aria-label="Send messages to Manh">Let's get in touch!</a>
           </button>
           <div className="contact__social__links">
             <a
@@ -108,6 +111,7 @@ const Contact = () => {
           </a>
         </button>
       </FadeInOnIntersect>
+      <div className="circle contact__circle__one" />
     </section>
   );
 };

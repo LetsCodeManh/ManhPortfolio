@@ -1,5 +1,3 @@
-import { useRef } from "react";
-import useParallax from "../Effects/useParallax";
 import "./index.css";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,11 +5,6 @@ import { projects } from "./projectsData";
 import FadeInOnIntersect from "../Effects/AnimationOnScroll";
 
 const Projects = () => {
-  const circleOneRef = useRef(null);
-  const circleTwoRef = useRef(null);
-  useParallax(circleOneRef, 0.2);
-  useParallax(circleTwoRef, 0.4);
-
   return (
     <section id="projects" className="projects">
       <h1 className="projects__header">My Projects</h1>
@@ -26,7 +19,12 @@ const Projects = () => {
               <h2>{project.title}</h2>
               <div>{project.technologies}</div>
               <div className="projects__card__links">
-                <a href={project.github} target="_blank" className="icon__hover" aria-label={`${project.title} GitHub Repository`}>
+                <a
+                  href={project.github}
+                  target="_blank"
+                  className="icon__hover"
+                  aria-label={`${project.title} GitHub Repository`}
+                >
                   <FontAwesomeIcon
                     icon={faGithub}
                     size="2xl"
@@ -37,7 +35,8 @@ const Projects = () => {
                   <a
                     href={project.liveLink}
                     target="_blank"
-                    className="projects__card__liveLink icon__hover" aria-label={`${project.title} Live Link`}
+                    className="projects__card__liveLink icon__hover"
+                    aria-label={`${project.title} Live Link`}
                   >
                     {project.live}
                   </a>
@@ -47,8 +46,8 @@ const Projects = () => {
           </FadeInOnIntersect>
         ))}
       </div>
-      <div ref={circleOneRef} className="circle projects__circle__one" />
-      <div ref={circleTwoRef} className="circle projects__circle__two" />
+      <div className="circle projects__circle__one" />
+      <div className="circle projects__circle__two" />
     </section>
   );
 };
