@@ -82,3 +82,8 @@
     justify-content: center;
   }
 }
+
+.home .button__normal:hover {
+  background-color: var(--color-primary-3);
+  color: var(--color-dark);
+}

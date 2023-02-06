@@ -7,7 +7,7 @@ const Hero = () => {
   const circleOneRef = useRef(null);
   const circleTwoRef = useRef(null);
   useParallax(circleOneRef, 0.2);
-  useParallax(circleTwoRef, 0.4);
+  useParallax(circleTwoRef, 0.35);
 
   return (
     <section id="home" className="home">

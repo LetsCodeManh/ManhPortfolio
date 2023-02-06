@@ -11,10 +11,8 @@ import "./index.css";
 const About = () => {
   const circleOneRef = useRef(null);
   const circleTwoRef = useRef(null);
-  const circleThreeRef = useRef(null);
-  useParallax(circleOneRef, 0.2);
-  useParallax(circleTwoRef, 0.4);
-  useParallax(circleThreeRef, 0.3);
+  useParallax(circleOneRef, 0.5);
+  useParallax(circleTwoRef, 0.3);
 
   return (
     <section id="about" className="about">
