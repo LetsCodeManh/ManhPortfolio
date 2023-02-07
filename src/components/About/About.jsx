@@ -1,7 +1,5 @@
 import {
-  faGithub,
   faLinkedin,
-  faLinkedinIn,
   faSquareGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

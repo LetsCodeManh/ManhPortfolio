@@ -1,4 +1,4 @@
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import FadeInOnIntersect from "../Effects/AnimationOnScroll";
@@ -82,9 +82,10 @@ const Contact = () => {
               aria-label="GitHub Account"
             >
               <FontAwesomeIcon
-                icon={faGithub}
+                icon={faSquareGithub}
                 size="2xl"
                 style={{ color: "#171515" }}
+                className="icon__about"
               />
             </a>
             <a
@@ -97,6 +98,7 @@ const Contact = () => {
                 icon={faLinkedin}
                 size="2xl"
                 style={{ color: "#0077B5" }}
+                className="icon__about"
               />
             </a>
           </div>
