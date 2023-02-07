@@ -70,7 +70,9 @@ const Contact = () => {
             required
           />
           <button type="submit" className="button__normal">
-            <a href="#contact" aria-label="Send messages to Manh">Let's get in touch!</a>
+            <a href="#contact" aria-label="Send messages to Manh">
+              Let's get in touch!
+            </a>
           </button>
           <div className="contact__social__links">
             <a
@@ -106,7 +108,11 @@ const Contact = () => {
           available if desired.
         </p>
         <button className="button__normal">
-          <a href="#" target="_blank" aria-label="Download Resume">
+          <a
+            href="https://drive.google.com/file/d/1JxykYXprMaDz9uX8n6WtMFK_022pbgS0/view?usp=share_link"
+            target="_blank"
+            aria-label="Download Resume"
+          >
             Download CV!
           </a>
         </button>
