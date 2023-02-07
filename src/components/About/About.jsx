@@ -1,4 +1,9 @@
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faLinkedinIn,
+  faSquareGithub,
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import fillerPicture from "../../assets/Profilbild.jpg";
@@ -38,9 +43,10 @@ const About = () => {
               aria-label="GitHub Account"
             >
               <FontAwesomeIcon
-                icon={faGithub}
+                icon={faSquareGithub}
                 size="2xl"
                 style={{ color: "#171515" }}
+                className="icon__about"
               />
             </a>
             <a
@@ -53,6 +59,7 @@ const About = () => {
                 icon={faLinkedin}
                 size="2xl"
                 style={{ color: "#0077B5" }}
+                className="icon__about"
               />
             </a>
           </div>

@@ -137,3 +137,7 @@ body {
 .icon__hover:hover {
   scale: 1.1;
 }
+
+.icon__hover:active {
+  scale: .9;
+}
