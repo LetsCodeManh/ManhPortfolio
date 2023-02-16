@@ -111,7 +111,7 @@ const Contact = () => {
         </p>
         <button className="button__normal">
           <a
-            href="https://drive.google.com/file/d/1JxykYXprMaDz9uX8n6WtMFK_022pbgS0/view?usp=share_link"
+            href="https://drive.google.com/file/d/1JxykYXprMaDz9uX8n6WtMFK_022pbgS0/view?usp=sharing"
             target="_blank"
             aria-label="Download Resume"
           >
